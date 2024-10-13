@@ -1,0 +1,302 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F3EAE1; /* Fondo suave */
+    color: #333;
+}
+
+/* Fuentes */
+h1, h2, h3 {
+    font-family: 'Century Gothic', sans-serif;
+}
+
+#sobre-mi {
+    padding: 50px 20px; /* Añade un relleno para separar el texto de los bordes */
+    text-align: center; /* Centra el texto */
+    max-width: 800px; /* Limita el ancho del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+#sobre-mi p {
+    font-size: 18px;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+
+/* Cabecera */
+header {
+    background-color: #8C4B3A; /* Terracota oscuro */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección Hero */
+#hero {
+    background-color: #E7B299; /* Terracota claro */
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#hero .btn {
+    background-color: #8C4B3A;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Sección del carrusel */
+/* Sección del carrusel */
+/* Sección del carrusel */
+#carrusel {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    overflow: hidden; /* Oculta los elementos fuera del área visible */
+}
+
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transición suave entre imágenes */
+    will-change: transform; /* Mejora el rendimiento de la animación */
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out; /* Para que el cambio sea fluido */
+}
+
+.carrusel img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Botones de navegación */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* Hover en los botones para mejorar interacción */
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Sección proyectos */
+#proyectos {
+    padding: 50px;
+    text-align: center; /* Centra el texto */
+}
+
+.galeria {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples líneas si es necesario */
+}
+
+.proyecto {
+    flex: 1 1 400px; /* Permite que los proyectos ocupen el mismo espacio y se ajusten */
+    text-align: center;
+    max-width: 400px; /* Ajusta el ancho máximo según tu diseño */
+}
+
+.proyecto img {
+    width: 100%; /* Se ajusta al ancho del contenedor */
+    height: 300px; /* Define una altura fija */
+    object-fit: cover; /* Mantiene la proporción y cubre el contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+/* Sección servicios */
+#servicios {
+    padding: 50px;
+    background-color: #F3EAE1;
+    text-align: center;
+}
+
+.servicios-contenedor {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.servicio {
+    flex: 1;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.servicio i {
+    font-size: 40px;
+    color: #8C4B3A;
+}
+
+.servicio h3 {
+    margin: 20px 0 10px;
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+}
+
+/* Sección testimonios */
+#testimonios {
+    background-color: #8C4B3A;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.testimonios-carrusel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonio {
+    max-width: 400px;
+    background-color: #FFF;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+    transition: transform 0.3s;
+}
+
+.testimonio:hover {
+    transform: scale(1.05);
+}
+
+.testimonio h4 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Sección formulario de contacto */
+#formulario-contacto {
+    padding: 50px;
+    text-align: center;
+    background-color: #E7B299;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #8C4B3A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #8C4B3A;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .carrusel {
+        flex-direction: column;
+    }
+
+    .servicios-contenedor, .galeria, .testimonios-carrusel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio, .proyecto, .testimonio {
+        max-width: 100%;
+    }
+}

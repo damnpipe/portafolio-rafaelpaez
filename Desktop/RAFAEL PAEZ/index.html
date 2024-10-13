@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rafael Páez Arquitecto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Century+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Rafael Páez Arquitecto</div>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Diseño arquitectónico innovador</h1>
+        <p>Transformando ideas en espacios funcionales y estéticos.</p>
+        <a href="#proyectos" class="btn">Ver Proyectos</a>
+    </section>
+
+    <!-- Sección del carrusel de renders -->
+    <section id="carrusel">
+        <h2>Proyectos Destacados</h2>
+        <BR>
+        <div class="carrusel">
+            <div class="slide">
+                <img src="/img/VIVIENDA UNIFAMILIAR.jpg" alt="Proyecto 1">
+            </div>
+            <div class="slide">
+                <img src="img/PROCESO1.jpg" alt="Proyecto 2">
+            </div>
+            <div class="slide">
+                <img src="img/PROCESO3.jpg" alt="Proyecto 3">
+            </div>
+        </div>
+        <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moverSlide(1)">&#10095;</button>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Soy Rafael Páez, arquitecto con más de 10 años de experiencia en diseño y construcción de proyectos residenciales y comerciales...</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <br>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="img/proyecto1.jpg" alt="URBANIZACION LOS ANGELES">
+                <h3>URBANIZACION LOS ANGELES</h3>
+            </div>
+            <div class="proyecto">
+                <img src="img/proyecto2.jpg" alt="CASA BLANCA">
+                <h3>CASA BLANCA</h3>
+            </div>
+            <div class="proyecto">
+                <img src="img/proyecto3.jpg" alt="MIRADORES DE ARBOLETES">
+                <h3>MIRADORES DE ARBOLETES</h3>
+            </div>
+            <div class="proyecto">
+                <img src="img/proyecto4.jpg" alt="CASA CONFORT">
+                <h3>CASA CONFORT</h3>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="servicios-contenedor">
+            <div class="servicio">
+                <i class="fas fa-drafting-compass"></i>
+                <h3>Diseño Arquitectónico</h3>
+                <p>Proyectos personalizados adaptados a tus necesidades, combinando estética y funcionalidad.</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-hard-hat"></i>
+                <h3>Supervisión de Obras</h3>
+                <p>Supervisión detallada para asegurar que cada etapa del proyecto cumpla con los más altos estándares.</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-home"></i>
+                <h3>Remodelaciones</h3>
+                <p>Renueva tu espacio con soluciones creativas que maximizan el uso del espacio y mejoran su apariencia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonios-carrusel">
+            <div class="testimonio">
+                <p>"Rafael entendió nuestras necesidades desde el primer día. Su diseño ha transformado nuestro hogar por completo."</p>
+                <h4>- Cliente 1</h4>
+            </div>
+            <div class="testimonio">
+                <p>"La dedicación y profesionalismo de Rafael en la supervisión de nuestro proyecto fue clave para el éxito del mismo."</p>
+                <h4>- Cliente 2</h4>
+            </div>
+            <div class="testimonio">
+                <p>"Su visión creativa y atención al detalle nos dejó impresionados. ¡Altamente recomendado!"</p>
+                <h4>- Cliente 3</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="formulario-contacto">
+        <h2>Contáctame</h2>
+        <form action="enviar.php" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div id="contacto">
+            <h2>Contacto</h2>
+            <p>Email: rafaelpaez@email.com</p>
+            <p>Teléfono: +123 456 7890</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
